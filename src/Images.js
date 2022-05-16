@@ -1,0 +1,28 @@
+export const IMAGES = [
+
+    { id: 0, url: "https://gateway.pinata.cloud/ipfs/QmQnyhRmvrQUHyeuAvazwpzUKCN6tDHtKMmdeTWykq4Chd/A1.png", reveal: 1 },
+    { id: 1, url: "https://gateway.pinata.cloud/ipfs/QmQnyhRmvrQUHyeuAvazwpzUKCN6tDHtKMmdeTWykq4Chd/B1.png", reveal: 22 },
+    { id: 2, url: "https://gateway.pinata.cloud/ipfs/QmQnyhRmvrQUHyeuAvazwpzUKCN6tDHtKMmdeTWykq4Chd/C1.png", reveal: 19 },
+    { id: 3, url: "https://gateway.pinata.cloud/ipfs/QmQnyhRmvrQUHyeuAvazwpzUKCN6tDHtKMmdeTWykq4Chd/D1.png", reveal: 7 },
+    { id: 4, url: "https://gateway.pinata.cloud/ipfs/QmQnyhRmvrQUHyeuAvazwpzUKCN6tDHtKMmdeTWykq4Chd/E1.png", reveal: 20 },
+    { id: 5, url: "https://gateway.pinata.cloud/ipfs/QmQnyhRmvrQUHyeuAvazwpzUKCN6tDHtKMmdeTWykq4Chd/A2.png", reveal: 16 },
+    { id: 6, url: "https://gateway.pinata.cloud/ipfs/QmQnyhRmvrQUHyeuAvazwpzUKCN6tDHtKMmdeTWykq4Chd/B2.png", reveal: 15 },
+    { id: 7, url: "https://gateway.pinata.cloud/ipfs/QmQnyhRmvrQUHyeuAvazwpzUKCN6tDHtKMmdeTWykq4Chd/C2.png", reveal: 6 },
+    { id: 8, url: "https://gateway.pinata.cloud/ipfs/QmQnyhRmvrQUHyeuAvazwpzUKCN6tDHtKMmdeTWykq4Chd/D2.png", reveal: 21 },
+    { id: 9, url: "https://gateway.pinata.cloud/ipfs/QmQnyhRmvrQUHyeuAvazwpzUKCN6tDHtKMmdeTWykq4Chd/E2.png", reveal: 18 },
+    { id: 10, url: "https://gateway.pinata.cloud/ipfs/QmQnyhRmvrQUHyeuAvazwpzUKCN6tDHtKMmdeTWykq4Chd/A3.png", reveal: 8 },
+    { id: 11, url: "https://gateway.pinata.cloud/ipfs/QmQnyhRmvrQUHyeuAvazwpzUKCN6tDHtKMmdeTWykq4Chd/B3.png", reveal: 25 },
+    { id: 12, url: "https://gateway.pinata.cloud/ipfs/QmQnyhRmvrQUHyeuAvazwpzUKCN6tDHtKMmdeTWykq4Chd/C3.png", reveal: 14 },
+    { id: 13, url: "https://gateway.pinata.cloud/ipfs/QmQnyhRmvrQUHyeuAvazwpzUKCN6tDHtKMmdeTWykq4Chd/D3.png", reveal: 2 },
+    { id: 14, url: "https://gateway.pinata.cloud/ipfs/QmQnyhRmvrQUHyeuAvazwpzUKCN6tDHtKMmdeTWykq4Chd/E3.png", reveal: 13 },
+    { id: 15, url: "https://gateway.pinata.cloud/ipfs/QmQnyhRmvrQUHyeuAvazwpzUKCN6tDHtKMmdeTWykq4Chd/A4.png", reveal: 9 },
+    { id: 16, url: "https://gateway.pinata.cloud/ipfs/QmQnyhRmvrQUHyeuAvazwpzUKCN6tDHtKMmdeTWykq4Chd/B4.png", reveal: 3 },
+    { id: 17, url: "https://gateway.pinata.cloud/ipfs/QmQnyhRmvrQUHyeuAvazwpzUKCN6tDHtKMmdeTWykq4Chd/C4.png", reveal: 23 },
+    { id: 18, url: "https://gateway.pinata.cloud/ipfs/QmQnyhRmvrQUHyeuAvazwpzUKCN6tDHtKMmdeTWykq4Chd/D4.png", reveal: 12 },
+    { id: 19, url: "https://gateway.pinata.cloud/ipfs/QmQnyhRmvrQUHyeuAvazwpzUKCN6tDHtKMmdeTWykq4Chd/E4.png", reveal: 11 },
+    { id: 20, url: "https://gateway.pinata.cloud/ipfs/QmQnyhRmvrQUHyeuAvazwpzUKCN6tDHtKMmdeTWykq4Chd/A5.png", reveal: 10 },
+    { id: 21, url: "https://gateway.pinata.cloud/ipfs/QmQnyhRmvrQUHyeuAvazwpzUKCN6tDHtKMmdeTWykq4Chd/B5.png", reveal: 5 },
+    { id: 22, url: "https://gateway.pinata.cloud/ipfs/QmQnyhRmvrQUHyeuAvazwpzUKCN6tDHtKMmdeTWykq4Chd/C5.png", reveal: 24 },
+    { id: 23, url: "https://gateway.pinata.cloud/ipfs/QmQnyhRmvrQUHyeuAvazwpzUKCN6tDHtKMmdeTWykq4Chd/D5.png", reveal: 4 },
+    { id: 24, url: "https://gateway.pinata.cloud/ipfs/QmQnyhRmvrQUHyeuAvazwpzUKCN6tDHtKMmdeTWykq4Chd/E5.png", reveal: 17 }
+]
