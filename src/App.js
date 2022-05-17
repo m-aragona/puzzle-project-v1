@@ -9,11 +9,9 @@ import ContractManagerJSON from './ContractsDatabase.json';
 import PartsCollectionJSON from './PartsCollection.json';
 import { Text, Flex } from '@chakra-ui/react';
 
-// https://exce1ance.github.io/blockchain-project/
+// https://m-aragona.github.io/nft-parts-project/
 // npm run build
 // npm run deploy
-const RINKEBY_RPC_URL = process.env.RINKEBY_RPC_URL
-const CONTRACT_ADDRESSES = process.env.REACT_APP_CONTRACT_ADDRESSES
 
 function App() {
   const [accounts, setAccounts] = useState([]);
@@ -24,27 +22,27 @@ function App() {
 
   async function checkPieces() {
     // Get Current Picture Contract Address
-    let provider = new ethers.providers.AlchemyProvider("rinkeby", RINKEBY_RPC_URL)
+    let provider = new ethers.providers.AlchemyProvider("rinkeby", process.env.RINKEBY_RPC_URL)
     const contractManager = new ethers.Contract(
-      CONTRACT_ADDRESSES,
+      process.env.REACT_APP_CONTRACT_ADDRESSES,
       ContractManagerJSON.abi,
       provider
     );
-    console.log(contractManager)
+    // console.log(contractManager)
     const resCurrentContract = await contractManager.currentContract()
     setContractAddress(resCurrentContract.toString())
 
-    const contract = new ethers.Contract(
-      contractAddress,
-      PartsCollectionJSON.abi,
-      provider
-    );
     try {
+      const contract = new ethers.Contract(
+        contractAddress,
+        PartsCollectionJSON.abi,
+        provider
+      );
       const response = await contract.tokenId();
       setTokenId(response.toNumber() - 1)
-      console.log("contract tokenId", tokenId)
+      // console.log("contract tokenId", tokenId)
     } catch (err) {
-      console.log("error: ", err)
+      // console.log("error: ", err)
     }
 
     provider = new ethers.providers.Web3Provider(window.ethereum, "any");
@@ -53,6 +51,11 @@ function App() {
       setchainId(network.chainId);
 
     })
+
+    window.ethereum.on('accountsChanged', function (accounts) {
+      setAccounts(accounts)
+    })
+
   }
 
   checkPieces()
@@ -60,7 +63,7 @@ function App() {
   return (
 
     <div className="App">
-      <NavBar className="NavBar" position='fixed' accounts={accounts} setAccounts={setAccounts} />
+      <NavBar className="NavBar" position='sticky' top='0' accounts={accounts} setAccounts={setAccounts} />
 
       <Flex justify="space-between" height='70px'>
         <Flex width="60%" paddingLeft='50px' >

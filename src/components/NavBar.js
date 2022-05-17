@@ -16,7 +16,7 @@ const NavBar = ({ accounts, setAccounts }) => {
                 method: "eth_requestAccounts",
             });
             setAccounts(accounts);
-            console.log(accounts[0])
+            // console.log(accounts[0])
         }
     }
 

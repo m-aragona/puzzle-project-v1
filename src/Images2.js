@@ -1,0 +1,28 @@
+export const IMAGES = [
+
+    { id: 0, url: "A1", reveal: 1 },
+    { id: 1, url: "B1", reveal: 22 },
+    { id: 2, url: "C1", reveal: 19 },
+    { id: 3, url: "D1", reveal: 7 },
+    { id: 4, url: "E1", reveal: 20 },
+    { id: 5, url: "A2", reveal: 16 },
+    { id: 6, url: "B2", reveal: 15 },
+    { id: 7, url: "C2", reveal: 6 },
+    { id: 8, url: "D2", reveal: 21 },
+    { id: 9, url: "E2", reveal: 18 },
+    { id: 10, url: "A3", reveal: 8 },
+    { id: 11, url: "B3", reveal: 25 },
+    { id: 12, url: "C3", reveal: 14 },
+    { id: 13, url: "D3", reveal: 2 },
+    { id: 14, url: "E3", reveal: 13 },
+    { id: 15, url: "A4", reveal: 9 },
+    { id: 16, url: "B4", reveal: 3 },
+    { id: 17, url: "C4", reveal: 23 },
+    { id: 18, url: "D4", reveal: 12 },
+    { id: 19, url: "E4", reveal: 11 },
+    { id: 20, url: "A5", reveal: 10 },
+    { id: 21, url: "B5", reveal: 5 },
+    { id: 22, url: "C5", reveal: 24 },
+    { id: 23, url: "D5", reveal: 4 },
+    { id: 24, url: "E5", reveal: 17 }
+]

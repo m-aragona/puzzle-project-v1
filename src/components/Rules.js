@@ -7,7 +7,7 @@ const Rules = () => {
 
     async function handleClaimFullArt() {
         let inputAddress = document.getElementById("input_address").value
-        console.log("input Address:", inputAddress)
+        // console.log("input Address:", inputAddress)
 
         if (window.ethereum) {
             const provider = new ethers.providers.Web3Provider(window.ethereum);

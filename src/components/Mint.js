@@ -4,9 +4,6 @@ import PartsCollectionJSON from '../PartsCollection.json';
 import { Button, Flex, Input } from '@chakra-ui/react';
 import ContractManagerJSON from '../ContractsDatabase.json';
 
-const PRIVATE_KEY = process.env.REACT_APP_PRIVATE_KEY
-const CONTRACT_ADDRESSES = process.env.REACT_APP_CONTRACT_ADDRESSES
-const RINKEBY_RPC_URL = process.env.REACT_APP_RINKEBY_RPC_URL
 
 const Mint = ({ tokenId, setTokenId, contractAddress, setContractAddress }) => {
     const [isMinting, setIsMinting] = useState();
@@ -15,7 +12,7 @@ const Mint = ({ tokenId, setTokenId, contractAddress, setContractAddress }) => {
     async function handleMint() {
         if (window.ethereum) {
             const provider = new ethers.providers.Web3Provider(window.ethereum);
-            console.log("contractT:", contractAddress)
+            // console.log("contract:", contractAddress)
             const signer = provider.getSigner();
             const contract = new ethers.Contract(
                 contractAddress,
@@ -29,22 +26,21 @@ const Mint = ({ tokenId, setTokenId, contractAddress, setContractAddress }) => {
                 setIsMinting(false)
                 setMintAmount(1)
 
-                contract.on("partsMinted", (from, quantity) => {
-                    console.log('Mint Event: ', from, quantity.toString())
-                })
+                // Listen Event
+                // provider.on("partsMinted", (from, quantity) => {
+                //     console.log('Mint Event: ', from, quantity.toString())
+                // })
 
                 // console.log('response: ', response)
                 const response2 = await contract.tokenId();
-                console.log("set token Id en Notas:", response2.toNumber() - 1)
                 setTokenId(response2.toNumber() - 1)
-                console.log("tokenId antes de New Contract:", tokenId)
                 if (response2.toNumber() - 1 >= 25) {
                     console.log("New Contract")
 
-                    let provider2 = new ethers.providers.AlchemyProvider("rinkeby", RINKEBY_RPC_URL);
-                    const signer2 = new Wallet(PRIVATE_KEY, provider2)
+                    let provider2 = new ethers.providers.AlchemyProvider("rinkeby", process.env.RINKEBY_RPC_URL);
+                    const signer2 = new Wallet(process.env.REACT_APP_PRIVATE_KEY, provider2)
                     const contract2 = new ethers.Contract(
-                        CONTRACT_ADDRESSES,
+                        process.env.REACT_APP_CONTRACT_ADDRESSES,
                         ContractManagerJSON.abi,
                         signer2
                     );
