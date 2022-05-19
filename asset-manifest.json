@@ -1,0 +1,40 @@
+{
+  "files": {
+    "main.css": "/puzzle-project-v1/static/css/main.84e48b59.css",
+    "main.js": "/puzzle-project-v1/static/js/main.fdeea01d.js",
+    "static/media/FullArt.PNG": "/puzzle-project-v1/static/media/FullArt.10fee7a4acd519b3fed4.PNG",
+    "static/media/A4.png": "/puzzle-project-v1/static/media/A4.831e60181d560d5231f3.png",
+    "static/media/A1.png": "/puzzle-project-v1/static/media/A1.4608d523421cba4f8777.png",
+    "static/media/black_frame.png": "/puzzle-project-v1/static/media/black_frame.70e66220f079374380db.png",
+    "static/media/C2.png": "/puzzle-project-v1/static/media/C2.06b0a0282cb7e4353e24.png",
+    "static/media/D2.png": "/puzzle-project-v1/static/media/D2.8b27c6a826b22923e699.png",
+    "static/media/C3.png": "/puzzle-project-v1/static/media/C3.c4a966f2fa20f4957737.png",
+    "static/media/B4.png": "/puzzle-project-v1/static/media/B4.61e2c8af048baed54f6a.png",
+    "static/media/B3.png": "/puzzle-project-v1/static/media/B3.c2918df3b6c54a0d3a85.png",
+    "static/media/C1.png": "/puzzle-project-v1/static/media/C1.2dc99ff20880bd6e0f79.png",
+    "static/media/C4.png": "/puzzle-project-v1/static/media/C4.c33ac846ed2e1669e9a9.png",
+    "static/media/B2.png": "/puzzle-project-v1/static/media/B2.c788fea0be3be0c3125e.png",
+    "static/media/D3.png": "/puzzle-project-v1/static/media/D3.2dd5bfe69ac594101c5f.png",
+    "static/media/E3.png": "/puzzle-project-v1/static/media/E3.e385d4e3810284e66e88.png",
+    "static/media/E2.png": "/puzzle-project-v1/static/media/E2.64b57ac7b6dc7cdb8d6e.png",
+    "static/media/B1.png": "/puzzle-project-v1/static/media/B1.835ceeda41db5546d1bc.png",
+    "static/media/E5.png": "/puzzle-project-v1/static/media/E5.e7a0152bb1e9bcfbff76.png",
+    "static/media/D1.png": "/puzzle-project-v1/static/media/D1.4d3f1165e1021530aff4.png",
+    "static/media/E4.png": "/puzzle-project-v1/static/media/E4.04b30673d565b1c22963.png",
+    "static/media/D4.png": "/puzzle-project-v1/static/media/D4.177d72fc95e4d36f5e99.png",
+    "static/media/B5.png": "/puzzle-project-v1/static/media/B5.bc18bff0aa89110a243a.png",
+    "static/media/A3.png": "/puzzle-project-v1/static/media/A3.c5f00ff6e1eae1ddd873.png",
+    "static/media/D5.png": "/puzzle-project-v1/static/media/D5.470965fdcf9ad9acb8cc.png",
+    "static/media/E1.png": "/puzzle-project-v1/static/media/E1.cc652690812978c29bc9.png",
+    "static/media/C5.png": "/puzzle-project-v1/static/media/C5.c5e34898e66c476a032d.png",
+    "static/media/A5.png": "/puzzle-project-v1/static/media/A5.f49693c98ac59d007e83.png",
+    "static/media/A2.png": "/puzzle-project-v1/static/media/A2.118ba356f705fbcc4b54.png",
+    "index.html": "/puzzle-project-v1/index.html",
+    "main.84e48b59.css.map": "/puzzle-project-v1/static/css/main.84e48b59.css.map",
+    "main.fdeea01d.js.map": "/puzzle-project-v1/static/js/main.fdeea01d.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.84e48b59.css",
+    "static/js/main.fdeea01d.js"
+  ]
+}
