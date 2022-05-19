@@ -1,5 +1,5 @@
 {
-  "homepage": "https://m-aragona.github.io/nft-parts-project",
+  "homepage": "https://m-aragona.github.io/puzzle-project-v1",
   "name": "minting-website",
   "version": "0.1.0",
   "private": true,
@@ -13,8 +13,11 @@
     "ethers": "^5.6.6",
     "framer-motion": "^6.3.3",
     "react": "^18.1.0",
+    "react-dnd": "^16.0.1",
+    "react-dnd-html5-backend": "^16.0.1",
     "react-dom": "^18.1.0",
     "react-scripts": "5.0.1",
+    "styled-components": "^5.3.5",
     "web-vitals": "^2.1.4"
   },
   "scripts": {

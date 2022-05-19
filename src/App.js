@@ -1,4 +1,4 @@
-import { useState } from 'react';
+import React, { useState, useContext } from 'react';
 import './App.css';
 import Picture from './components/Picture';
 import NavBar from './components/NavBar';
@@ -8,6 +8,14 @@ import { ethers } from 'ethers';
 import ContractManagerJSON from './ContractsDatabase.json';
 import PartsCollectionJSON from './PartsCollection.json';
 import { Text, Flex } from '@chakra-ui/react';
+
+import DragItem from "./components/DragItem";
+import { Grid, GridImage, GridItem } from "./components/Grid";
+import GridContext from "./components/GridContext";
+import { GridProvider } from "./components/GridContext";
+import { IMAGES } from './Images2';
+import fullart from './assets/Pictures/FullArt.PNG'
+
 
 // https://m-aragona.github.io/nft-parts-project/
 // npm run build
@@ -19,6 +27,7 @@ function App() {
   const [chainId, setchainId] = useState();
   const [contractAddress, setContractAddress] = useState();
   const isConnected = Boolean(accounts[0]);
+  const { items, moveItem } = useContext(GridContext);
 
   async function checkPieces() {
     // Get Current Picture Contract Address
@@ -63,6 +72,7 @@ function App() {
   return (
 
     <div className="App">
+
       <NavBar className="NavBar" position='sticky' top='0' accounts={accounts} setAccounts={setAccounts} />
 
       <Flex justify="space-between" height='70px'>
@@ -87,7 +97,7 @@ function App() {
         <Flex width="45%" paddingLeft='50px'>
           <div>
 
-            {tokenId > 25 ?
+            {/* {tokenId > 25 ?
               <Text fontWeight='bold' fontSize="25px">Congratulations! You have completed the image. Pieces owners will receive Full Art</Text>
               :
               <Text fontWeight='bold' fontSize="25px">There are still {tokenId === undefined ? "-" : (25 - tokenId)} NFT parts to mint!</Text>
@@ -96,7 +106,8 @@ function App() {
             {isConnected ?
               <Mint tokenId={tokenId} chainId={chainId} accounts={accounts} setTokenId={setTokenId} contractAddress={contractAddress} setContractAddress={setContractAddress} />
               : null}
-            <Rules />
+            <Rules /> */}
+            <img src={fullart} />
           </div>
         </Flex>
         <Flex width="40%" textAlign='center'>

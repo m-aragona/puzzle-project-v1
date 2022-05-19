@@ -27,11 +27,7 @@ const Mint = ({ tokenId, setTokenId, contractAddress, setContractAddress }) => {
                 setMintAmount(1)
 
                 // Listen Event
-                // provider.on("partsMinted", (from, quantity) => {
-                //     console.log('Mint Event: ', from, quantity.toString())
-                // })
 
-                // console.log('response: ', response)
                 const response2 = await contract.tokenId();
                 setTokenId(response2.toNumber() - 1)
                 if (response2.toNumber() - 1 >= 25) {
